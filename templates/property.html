@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HousingHarbour - Choose your dream place</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+
+  <!-- 
+    - custom css and js link
+  -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    
+</head>
+
+<body id="top">
+<!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <ion-icon name="business-outline"></ion-icon> HOUSING HARBOUR
+      </a>
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="{{ url_for('index') }}" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          <li>
+            <a href="{{ url_for('property_view') }}" class="navbar-link" data-nav-link>Property Listing</a>
+          </li>
+          <li>
+            <a href="{{ url_for('fw') }}" class="navbar-link" data-nav-link>Financial Wellness</a>
+          </li>
+      </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+  
+
+  <!-- FILTER -->
+  <section class="section property propf" aria-label="property">
+    <div class="container">
+      <!-- <h2 class="h2 section-title">Featured Properties</h2>
+      <p class="section-text">
+        A great platform to choose your properties.
+      </p><br><br> --> <br><br><br><br><br><br><br><br><br>
+      <div class="hero-form-wrapper">
+        <div class="form-tab">
+          <button class="tab-btn active" data-tab-btn>Buy</button>
+          
+          <button class="tab-btn" data-tab-btn>Rent</button>
+        </div>
+          <!--<div class="input-wrapper">
+            <label for="location" class="input-label">Location: </label>
+            
+            <select name="location" id="location" class="dropdown-list">
+              
+              <option value="" selected>--</option>
+              <option value="Pant Nagar">Pant Nagar</option>
+              
+            </select>
+          
+          </div>
+          <div class="input-wrapper">
+            <label for="category" class="input-label">Select Categories:</label>
+            <select name="category" id="category" class="dropdown-list">
+              <option value="" selected>--</option>
+              <option value="apartment">1 BHK</option>
+              <option value="apartment">2 BHK</option>
+              <option value="apartment">3 BHK</option>
+              <option value="apartment">4 BHK</option>
+              
+            </select>
+          </div>-->
+    
+<!--<div class="input-wrapper">
+    <label for="price" class="input-label">Select Price Range:</label>
+    <select name="price" id="price" class="dropdown-list">
+      <option value="" selected>--</option>
+      <option value="9000000-10000000">₹90,00,000 - ₹1,00,00,000</option>
+      <option value="10000000-20000000">₹1,00,00,000 - ₹2,00,00,000</option>
+      <option value="20000000-30000000">₹2,00,00,000 - ₹3,00,00,000</option>
+      <option value="30000000-40000000">₹3,00,00,000 - ₹4,00,00,000</option>
+      <option value="40000000-50000000">₹4,00,00,000 - ₹5,00,00,000</option>
+      <option value="50000000-100000000">₹5,00,00,000 and above</option>        
+    </select>
+    
+  </div>-->
+  <form method="POST" class="hero-form" name="checkForm">
+  <div class="input-wrapper">
+    <div class="filter">
+
+        <div class="form-group">
+          <label for="category" class="input-label">Choose Priority 1</label>
+    
+          <!-- Add checkbox-group class to the parent container -->
+          <div class="checkbox-group"> 
+            <label for="category" class="input-label"><input type="checkbox" name="criteria1" value="1">Near School</label>
+            <label for="category" class="input-label"><input type="checkbox" name="criteria1" value="2">Near Hospital</label>
+            <label for="category" class="input-label"><input type="checkbox" name="criteria1" value="3">Near Railway Station</label>
+            <label for="category" class="input-label"><input type="checkbox" name="criteria1" value="4">Near Metro Station</label>
+          </div>
+          <br>
+          <label for="category" class="input-label">Choose Priority 2</label>
+
+          <div class="checkbox-group"> 
+            <label for="category" class="input-label"><input type="checkbox" name="criteria2" value="1">Near School</label>
+            <label for="category" class="input-label"><input type="checkbox" name="criteria2" value="2">Near Hospital</label>
+            <label for="category" class="input-label"><input type="checkbox" name="criteria2" value="3">Near Railway Station</label>
+            <label for="category" class="input-label"><input type="checkbox" name="criteria2" value="4">Near Metro Station</label>
+          </div>
+        </div>
+        <button class="apply-btn" onclick="applyFilter()">Apply Filter</button>
+      </div>
+    </div>
+  </form>
+  
+  
+  
+    
+  </section>
+
+  
+
+      <!-- 
+        - #PROPERTY
+      -->
+<br><br>
+<main class="main" id="main">
+  <section class="section property" aria-label="property">
+      <div class="container">
+
+          <h2 class="h2 section-title"><span class="span">Properties</span></h2>
+
+          <ul class="property-list">
+            <!-- Iterate over properties and generate property cards -->
+            {% for building in buildings %}
+            <li>
+                <div class="property-card">
+                    <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                        <!-- Assuming the building model has an image field, update src attribute accordingly -->
+                        <img src="{{ url_for('static', filename='assets/images/property-1.jpg') }}" width="100%" height="50%" loading="lazy">
+                    </figure>
+                    <div class="card-content">
+                        <h3 class="h3">
+                            <!-- Assuming 'prop_name' is the name field in the Building model -->
+                            <a href="#" class="card-title">{{ building.prop_name }}</a>
+                        </h3>
+                        <ul class="card-list">
+                            <li class="card-item">
+                                <div class="item-icon">
+                                    <ion-icon name="cube-outline"></ion-icon>
+                                </div>
+                                <!-- Assuming 'sqft' represents the area in square feet -->
+                                <span class="item-text">{{ building.sqft }} sqft</span>
+                            </li>
+                            <li class="card-item">
+                                <div class="item-icon">
+                                    <ion-icon name="bed-outline"></ion-icon>
+                                </div>
+                                <!-- Assuming 'bhk' represents the number of bedrooms -->
+                                <span class="item-text">{{ building.bhk }} BHK</span>
+                            </li>
+                        </ul>
+                        <div class="card-meta">
+                            <div>
+                                <span class="meta-title">Price</span>
+                                <!-- Assuming 'price' represents the price of the property -->
+                                <span class="meta-text">{{ building.price }}</span>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- Update the link to view property details -->
+                        <span class="meta-text">
+                            <a href="#" class="btn btn-primary" onclick="redirectToPropertyDetails('{{ building.prop_id }}')">View Property</a>
+                        </span>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        
+        </div>
+        
+        </section>
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" aria-label="contact">
+        <div class="container">
+
+          <h2 class="h2 section-title">Have Question ? Get in touch!</h2>
+
+          <p class="section-text">
+            A great platform to choose your properties.
+          </p>
+
+          <button class="btn btn-primary">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <span class="span">Contact us</span>
+          </button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <!-- <section class="newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <div class="wrapper">
+            <h2 class="h2 section-title">Subscribe to Newsletter!</h2>
+
+            <p class="section-text">Subscribe to get latest updates and information.</p>
+          </div>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email :" aria-label="Enter your email"
+              required class="email-field">
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+      </section> -->
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <ion-icon name="business-outline"></ion-icon> HOUSING HARBOR
+          </a>
+
+          <p class="footer-text">
+            A great platform to choose your properties.
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">About us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Services</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Pricing</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Blog</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward"></ion-icon>
+
+              <span class="span">Login</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Details</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline"></ion-icon>
+
+            <address class="address">
+              HH, KJSCE,<br>
+              VidyaNagar, Vidya Vihar East,<br>
+              Vidyavihar, Mumbai, Maharashtra 400077
+              <a href="https://maps.app.goo.gl/s2hNuVqTifBwNsG77" class="address-link">View on Google map</a>
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline"></ion-icon>
+
+            <a href="mailto:sanika.desai@somaiya.edu" class="footer-link">kjsce@example.com</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call-outline"></ion-icon>
+
+            <a href="#" class="footer-link">1234567899</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 HOUSING HARBOR. All Right Reserved by <a href="#" class="copyright-link">HH</a>.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/kjsce.svu/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/kjsomaiyacollegeofengineering/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/kjsce?lang=en" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://in.linkedin.com/school/kj-somaiya-college-of-engineering-vidyavihar/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script>
+    function redirectToPropertyDetails(propId) {
+        var url = '/property/' + propId;
+        window.location.href = url;
+    }
+  </script>
+    
+
+  
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
