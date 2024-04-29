@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Inquiry Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            margin-top: 100px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="number"],
+        input[type="email"]
+        select {
+            width: calc(100% - 10px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        
+        textarea {
+            width: calc(100% - 10px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        
+        input[type="submit"] {
+            width: 100%;
+            background-color: hsl(142, 76%, 36%);;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: hsl(142, 76%, 36%);;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header" data-header>
+    <div class="container">
+
+        <a href="#" class="logo">
+            <ion-icon name="business-outline"></ion-icon> HOUSING HARBOUR
+        </a>
+
+        <nav class="navbar container" data-navbar>
+            <ul class="navbar-list">
+                <li>
+                  <a href="{{ url_for('index') }}" class="navbar-link" data-nav-link>Home</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('property_view') }}" class="navbar-link" data-nav-link>Property Listing</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('fw') }}" class="navbar-link" data-nav-link>Financial Wellness</a>
+                </li>
+            </ul>
+          </nav>
+
+          <button class="nav-toggle-btn" aria-label="Toggle menu">
+            <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+            <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+          </button>
+
+    </div>
+</header>
+
+<form onsubmit="return calculateAffordablePropertyPrice()">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="phone">Your Phone Number:</label>
+    <input type="text" id="phone" name="phone" required>
+    <br><br>
+
+    <label for="income">Monthly Income (INR):</label>
+    <input type="number" id="income" name="income" required>
+    <br><br>
+
+    <label for="expenses">Monthly Expenses (INR):</label>
+    <input type="number" id="expenses" name="expenses" required>
+    <br><br>
+
+    <label for="budget">Budget for Property (INR):</label>
+    <input type="number" id="budget" name="budget" required>
+    <br>
+
+    <label for="propertyType">Property Type</label>
+    <select id="propertyType" name="propertyType" required>
+        <option value="">Select</option>
+        <option value="Rent">Rent</option>
+        <!-- <option value="Buy">Buy</option> -->
+    </select><br>
+
+    <label for="priceRange">Price Range:</label>
+    <select id="priceRange" name="priceRange" required>
+        <option value="">Select</option>
+        <option value="Below ₹10,000">Below ₹10,000</option>
+        <option value="₹10,000 - ₹20,000">₹10,000 - ₹20,000</option>
+        <option value="₹20,000 - ₹30,000">₹20,000 - ₹30,000</option>
+        <option value="₹30,000 - ₹40,000">₹30,000 - ₹40,000</option>
+        <option value="₹40,000 - ₹50,000">₹40,000 - ₹50,000</option>
+        <option value="Above ₹50,000">Above ₹50,000</option>
+    </select>
+    <br>
+
+    <br>
+
+    <input type="submit" value="Calculate">
+</form>
+
+<script>
+    function calculateAffordablePropertyPrice() {
+        var income = parseInt(document.getElementById("income").value);
+        var expenses = parseInt(document.getElementById("expenses").value);
+        var budget = parseInt(document.getElementById("budget").value);
+        var debtToIncomeRatio = 0.3; // Adjust this according to financial rules
+        
+        var maxAffordablePrice = (income - expenses) * debtToIncomeRatio;
+        var propertyType = document.getElementById("propertyType").value;
+        
+        if (propertyType === "Rent") {
+            alert("Based on your income and expenses, you can afford a rental property up to approximately ₹" + maxAffordablePrice.toFixed(2));
+        } else if (propertyType === "Buy") {
+            if (budget > maxAffordablePrice) {
+                alert("Based on your income and expenses, you can afford a property up to your budget of ₹" + budget);
+            } else {
+                alert("Based on your income and expenses, you can afford a property up to approximately ₹" + maxAffordablePrice.toFixed(2));
+            }
+        }
+        
+        return false; // Prevent form submission
+    }
+    
+    function updatePriceOptions() {
+        var propertyType = document.getElementById("propertyType").value;
+        var income = parseInt(document.getElementById("income").value);
+        var priceRangeSelect = document.getElementById("priceRange");
+        
+        // Enable all options first
+        for (var i = 0; i < priceRangeSelect.options.length; i++) {
+            priceRangeSelect.options[i].disabled = false;
+        }
+        
+        // Disable options based on property type and income
+        if (propertyType === "Buy" && income < 50000) {
+            priceRangeSelect.querySelector("option[value='Above ₹50,000']").disabled = true;
+        }
+        
+        if (propertyType === "Rent" && income < 10000) {
+            priceRangeSelect.querySelector("option[value='Below ₹10,000']").disabled = true;
+        }
+    }
+    
+    // Call the function initially and whenever property type or income changes
+    document.getElementById("propertyType").addEventListener("change", updatePriceOptions);
+    document.getElementById("income").addEventListener("change", updatePriceOptions);
+
+</script>
+
+</body>
+</html>

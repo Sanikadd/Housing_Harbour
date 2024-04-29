@@ -1,0 +1,187 @@
+n_id,n_name,n_addr,Latitude,Longitude,n_type
+1,Garodia International Centre for Learning Mumbai,"Garodia International Centre for Learning Mumbai, 55, 90 Feet Rd, Garodia Nagar, Ghatkopar East, Mumbai, Maharashtra 400077
+",19.0748994,72.9060813,School
+2,"The Universal School, Ghatkopar","The Universal School, Ghatkopar, Plot No, 17, Tilak Rd, near Lion’s Garden, Sindhu Wadi, Ghatkopar East, Mumbai, Maharashtra 400077",19.0759938,72.9052142,School
+3,SHRI INDRADEO SINGH INTERNATIONAL SCHOOL,"SHRI INDRADEO SINGH INTERNATIONAL SCHOOL, 3WP5+XRX, Laxminarayan Ln, opp. Ghatkopar Station, Shival Nagar, CGS Colony, Ghatkopar West, Mumbai, Maharashtra 400086",19.0874846,72.9096172,School
+4,S.g.k.m. International School,"S.g.k.m. International School, Vaibhav, Tilak Rd, Ghatkopar, Sindhu Wadi, Ghatkopar East, Mumbai, Maharashtra 400077",19.0758983,72.9051037,School
+5,The Somaiya School,"The Somaiya School, Vidyanagar, Vidya Vihar East, Ghatkopar East, Mumbai, Maharashtra 400077.",19.0745163,72.9002375,School
+6,R.N. Gandhi High School,"R.N. Gandhi High School, RN Gandhi Rd, ONGC Colony, Rajawadi Colony, Vidyavihar, Mumbai, Maharashtra 400077
+",19.0776046,72.8992542,School
+7,PVG Vidya Bhawan School,"PVG Vidya Bhawan School, CTS-218, Barrister Nath Pai Nagar, GHATKOPAR (E, Mumbai, Maharashtra 400077",19.0724469,72.9065825,School
+8,Ramji Assar Vidyalaya,"Ramji Assar Vidyalaya, 3WJ3+QQ7, M G Road, Mahatma Gandhi Rd, Mumbai, Maharashtra 400077",19.0819036,72.9044067,School
+9,RUSHIKUL GURUKUL ENGLISH MEDIUM SCHOOL,"RUSHIKUL GURUKUL ENGLISH MEDIUM SCHOOL, Tilak Rd V C GURUKUL building, Ghatkopar East, Mumbai, Maharashtra 400077",19.08113,72.9072187,School
+10,D J Doshi Gurukul English Medium High School and Junior College of Commerce,"D J Doshi Gurukul English Medium High School and Junior College of Commerce, Tilak Road, off, Derasar Ln, Ghatkopar East, Mumbai, Maharashtra 400077",19.0811613,72.9071909,School
+11,Mumbai Public School CBSE Rajawadi,"Mumbai Public School CBSE Rajawadi, 3VHX+5QG, RN Gandhi Rd, ONGC Colony, Rajawadi Colony, Vidyavihar, Mumbai, Maharashtra 400077",19.0779278,72.8994661,School
+12,"Peppyhearts Preschool +10 years","Peppyhearts Preschool +10 years, Satyam Shopping Centre, C Wing Shop No. 11 to, 15, Mahatma Gandhi Rd, Ghatkopar East, Mumbai, Maharashtra 400077",19.0824497,72.9040907,School
+13,"Modern English Medium School","Modern English Medium School, 3WC8+F6F, Kamraj Nagar, Eastern Express Highway, Ghatkopar East, Mumbai, Maharashtra 400077",19.071177,72.915534,School
+14,Holy Family High School,"Holy Family High School, 3WC4+FF2, Pestom Sagar Rd Number 4, Chembur West, Pestom Sagar Colony, Ghatkopar East, Mumbai, Maharashtra 400089
+",19.07114,72.9061494,School
+15,"K.V.K Ghatkopar Sarvajanik School
+","K.V.K Ghatkopar Sarvajanik School, 3WV5+PXR KVK Sarvajanik Education Society School, Sainath Nagar Rd, Sainath Nagar, Indira Nagar, Ghatkopar West, Mumbai, Maharashtra 400086",19.0944555,72.9100804,School
+16,Little Star English High School,"Little Star English High School, 27, Lal Bahadur Shastri Marg, Chirag Nagar, Ghatkopar West, Mumbai, Maharashtra 400086",19.087859,72.8987492,School
+17,Dominic Savio Vidyalaya,"Dominic Savio Vidyalaya, 3WQ7+RRP, Gauri Shankar Wadi No. 2, Savitribai Phule Nagar, Pant Nagar, Ghatkopar East, Mumbai, Maharashtra 400075",19.0895944,72.9145679,School
+18,"Subedar English High School & Junior college of commerce
+","Subedar English High School & Junior college of commerce, Azad Nagar, Lal Bahadur Shastri Marg, Ghatkopar, Mumbai, Maharashtra 400086
+",19.0914689,72.8981186,School
+19,"Suyash Vidyalaya","Suyash Vidyalaya, Near aacharya atre ground, Pant Nagar, Ghatkopar East, Mumbai, Maharashtra 400075",19.0858279,72.9140609,School
+20,Ramai High School,"Ramai High School, No.4, Ramabai Ambedkar Nagar Rd, Ramabai Nagar, Ghatkopar East, Mumbai, Maharashtra 400075",19.0759617,72.9173294,School
+21,"P G Garodia School (ICSE)","P G Garodia School (ICSE), 153, Garodia Nagar, Ghatkopar East, Mumbai, Maharashtra 400077
+",19.0751935,72.9094399,School
+22,"Sheth Virchand Dhanji Secondary English Medium School
+","Sheth Virchand Dhanji Secondary English Medium School, 3WM5+2CP, Hingwala Ln, Saibaba Nagar, Pant Nagar, Ghatkopar East, Mumbai, Maharashtra 400077",19.0825862,72.9085779,School
+23,"D.B PAWAR ENGLISH SCHOOL
+","D.B PAWAR ENGLISH SCHOOL, Pawar niwas room no. 3 D.B.Pawar chouk, Ramabai Ambedkar Nagar, Ghatkopar East, Mumbai, Maharashtra 400075
+",19.0764164,72.9149994,School
+24,"Maheshwari Vidyalaya & Jr. College
+","Maheshwari Vidyalaya & Jr. College, S.N, Maneklal Mehta Rd, Kasturi Park, Maneklal Estate, Ghatkopar West, Mumbai, Maharashtra 400086",19.0896901,72.9029072,School
+25,"The Sarvodaya Anantya School
+","The Sarvodaya Anantya School, CTS 1811 Off LBS Road, Hirachand Desai Rd, Ghatkopar West, Mumbai, Maharashtra 400086",19.0908536,72.9073856,School
+26,"Smt. S.T. Mehta School
+","Smt. S.T. Mehta School, 3WM2+CH6, Cama Lane, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0835482,72.901397,School
+27,Saraswati Vidya Mandir,"Saraswati Vidya Mandir, Behind Jagruti Nagar Metro Station, Andheri Ghatkopar Link Rd, Bhatwadi, Ghatkopar West, Mumbai, Maharashtra 400084
+",19.0926147,72.9026911,School
+28,"Fatima High School
+","Fatima High School, 3VJX+XCF, Vidyavihar, Mumbai, Maharashtra 400086",19.082384,72.8984377,School
+29,"Smt. R.N. Sheth English Girls Primary School
+","Smt. R.N. Sheth English Girls Primary School, 3WM2+9HF New S.N.D.T School, Camalane, Ghatkopar, Vidyavihar, Mumbai, Maharashtra 400086",19.0834375,72.9014375,School
+30,Dnyanprakash Vidyalay,"Dnyanprakash Vidyala, 3WV2+W7H, Ramchandra B Kadam Marg, Bhatwadi, Barve Nagar, Ghatkopar West, Mumbai, Maharashtra 400084
+",19.094804,72.9007292,School
+31,"St. Mary's Malankara High School
+","St. Mary's Malankara High School, 3VXV+8C3, Andheri - Ghatkopar Rd, Asalfa Metro Station, Ghatkopar (W), Pereira Wadi, Asalpha, Mumbai, Maharashtra 400072
+",19.0982578,72.8935412,School
+32,"Little Flower English High School
+","Little Flower English High School, 4W27+75R, Amrut Nagar Rd, Ram Nagar, Amrut Nagar, Ghatkopar West, Mumbai, Maharashtra 400086",19.1007275,72.9128929,School
+33,"SIES (DR. APJ ABDUL KALAM) MEMORIAL HIGH SCHOOL
+","SIES (DR. APJ ABDUL KALAM) MEMORIAL HIGH SCHOOL, PLOT NO 28, 29, Rifle Range Rd, Ghatkopar, Gangawadi, Ghatkopar West, W, Mumbai, Maharashtra 400086",19.0893148,72.9078057,School
+34,"Meera's High School
+","Meera's High School, A-21, Vikhroli Park Site Rd Number 1, near Bank Of India, Amrut Nagar, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.1033441,72.911844,School
+35,Ramji Vidyalaya Group Of Schools & Laxmichand Golwala College Of Commerce & Economics,"Ramji Vidyalaya Group Of Schools & Laxmichand Golwala College Of Commerce & Economics, Haveli Apartment, M G RD, Mahatma Gandhi Rd, Rajawadi Colony, Ghatkopar East, Mumbai, Maharashtra 400077",19.0817817,72.9043293,School
+36,"Bharathi Vidya Mandir School And Junior College
+","Bharathi Vidya Mandir School And Junior College, 3WP4+VW6, Sagar Bonanza,J V Road, Station Road, Kapol wadi, Pant Nagar, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0871516,72.907269,School
+37,"Universal High School Chembur
+","Universal High School Chembur, Universal High school Road , J.K, Janardhan Krishna Karmalkar Marg, Tilak Nagar, Chembur, Mumbai, Maharashtra 400089",19.0696261,72.8997013,School
+38,Swami Shyanananda High School & Junior College,"Swami Shyanananda High School & Junior College, Kasturi Park, Maneklal Estate, Ghatkopar West, Mumbai, Maharashtra 400086",19.0896446,72.9029046,School
+39,"Parakh Hospital
+","Parakh Hospital, Khokani Lane, Opp. Ghatkopar Railway Station, Ghatkopar East, Mumbai, Maharashtra 400077",19.0843934,72.9077054,Hospital
+40,Vivek Hospital,"Vivek Hospital, Sai Darshan, Asalfa, Ramchandra B Kadam Marg, Opposite Saraswat Bank, Ghatkopar West, Mumbai, Maharashtra 400084",19.094046,72.900018,Hospital
+41,Sarvodaya Hospital,"Sarvodaya Hospital, Lal Bahadur Shastri Marg, Gandhi Nagar, Kirti Vihar, Ghatkopar West, Mumbai, Maharashtra 400086",19.0903959,72.907218,Hospital
+42,"Vivek Hospital","Vivek Hospital, Sai Darshan, Asalfa, Ramchandra B Kadam Marg, Opposite Saraswat Bank, Ghatkopar West, Mumbai, Maharashtra 400084
+",19.094046,72.900018,Hospital
+43,Nulife Hospital,"Nulife Hospital, Harekrishna Building, Jeevdaya Hospital, A1, Harekrishna Building, 1st Floor, Near Telephone Exchange, A1, Harekrishna Bldg, Lal Bahadur Shastri Marg, Jivdaya Lane, Ghatkopar West, Mumbai, Maharashtra 400086",19.0881416,72.9050137,Hospital
+44,"Disha Hospital
+","Disha Hospital, Om Sri Sai Dham CHS, Andheri - Ghatkopar Road Asalpha, Jambhulpada, Ghatkopar West, Mumbai, Maharashtra 400084
+",19.0938114,72.8984998,Hospital
+45,"Zynova Shalby Hospital
+","Zynova Shalby Hospital, Acme Elanza, 1900-1917, Gandhi Nagar, Kirti Vihar, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0886469,72.9064779,Hospital
+46,"Vedant Central Hospital","Vedant Central Hospital, Pasaydan Bhavan, R.B. Kadam Marg, Near Jagruti Nagar Metro Station Wagadwala, Jivdaya Ln, next to Jain Temple in, Ghatkopar West, Mumbai, Maharashtra 400084",19.0928736,72.9037671,Hospital
+47,"Sukh Shanti Hospital- ICU, Physician, Cardiologist and Diabetologist in Ghatkopar, Hospital In Ghatkopar","Sukh Shanti Hospital- ICU, Physician, Cardiologist and Diabetologist in Ghatkopar, Hospital In Ghatkopar, 1st floor, Vikram Apartments, Kasturi Park, Maneklal Estate, Ghatkopar West, Mumbai, Maharashtra 400086",19.0878475,72.9022979,Hospital
+48,"Khus-Hal Hospital
+","Khus-Hal Hospital, 102&103, Station Road, opposite Suchita Business Park, Shival Nagar, Saibaba Nagar, Pant Nagar, Ghatkopar East, Mumbai, Maharashtra 400078",19.0853873,72.9104529,Hospital
+49,"Sharan Hospital","Sharan Hospital, 101, First floor, Dipti Solitaire, Mahatma Gandhi Rd, above Axis Bank, Bhatwadi, Kapol wadi, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0878502,72.9060991,Hospital
+50,"Sant Muktabai General Hospital
+","Sant Muktabai General Hospital, 3WX3+9MF, SG Barve Marg, near muktabai hospital, Siddharth Nagar, Barve Nagar, Ghatkopar West, Mumbai, Maharashtra 400084
+",19.0984458,72.9041824,Hospital
+51,"Shalya hospital
+","Shalya hospital, Silver Point, B -502, Mukand Society Rd, Kasturi Park, Maneklal Estate, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0878668,72.9027294,Hospital
+52,"Rajawadi Hospital
+","Rajawadi Hospital, 3WH2+FFG, Rajawadi Colony, Ghatkopar East, Mumbai, Maharashtra 400077
+",19.0786829,72.9012076,Hospital
+53,"JEEVAN JYOT HOSPITAL
+","JEEVAN JYOT HOSPITAL, 175d, opposite ghatkopar railway station, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0854014,72.9067946,Hospital
+54,"Aarogyada Multi SuperSpeciality Hospital","Aarogyada Multi SuperSpeciality Hospital, Lower, Ground and First Floor, Neelyog Veydaanta, C Wing, Andheri Ghatkopar Link Rd, Ghatkopar, TPS Colony, Nityanand Nagar, Ghatkopar (W, Mumbai, Maharashtra 400086
+",19.0908365,72.9135388,Hospital
+55,"H. J. Doshi Ghatkopar Hindu Sabha Hospital
+","H. J. Doshi Ghatkopar Hindu Sabha Hospital, Address, Shraddhanand Rd, opp. Railway Station, Bhatwadi, Kapol wadi, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0850377,72.9062824,Hospital
+56,"Nagher samaj hospital","Nagher samaj hospital, 40, Shah velani Bhavan, near madhav baug hall, Jagdusha Nagar, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0976459,72.9080362,Hospital
+57,"Abhishek Nursing Home","Abhishek Nursing Home, Jagruti Cooperative Housing Society, Housing Society, near Saraswat Co-op Bank Ltd, near Jagruti Nagar Metro Station, Bhatwadi, Kaju Pada, Ghatkopar West, Mumbai, Maharashtra 400084
+",19.0801865,72.8969854,Hospital
+58,"Sona Hospital And Clinic","Sona Hospital And Clinic, 3WW2+57P, Ramchandra B Kadam Marg, Near Shree Siddhi Ganesh Chowk, Bhatwadi, Barve Nagar, Ghatkopar West, Mumbai, Maharashtra 400084
+",19.0954569,72.9007181,Hospital
+59,Samartha Maternity & Multispeciality Hospital- A NABH Certified Hospital - (Dr Abhay K Shirkande & Dr Preeti A Shirkande),"Samartha Maternity & Multispeciality Hospital- A NABH Certified Hospital - (Dr Abhay K Shirkande & Dr Preeti A Shirkande), Premises No. 7,1st Floor, Neelkanth Market CHSL, Plot No. 76 A M. G. Road, Ghatkopar East, Mumbai, Maharashtra 400077",19.0778737,72.9055627,Hospital
+60,"Pragati Healthcare Hospital
+","Pragati Healthcare Hospital, 1, Haridwar Apartment Gopal Bhavan, Lal Bahadur Shastri Marg, near Roa Hotel, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.090761,72.9091844,Hospital
+61,Sapna Health Care Centre Pvt Ltd- CoWin Centre Ghatkopar West,"Sapna Health Care Centre Pvt Ltd- CoWin Centre Ghatkopar West, Bhaveshwar Plaza, Sapna Healthcare centre, A Wing, Lal Bahadur Shastri Marg, opposite Shreyas Cinema, opp. Shreyas Cinema, Ghatkopar, W, Mumbai, Maharashtra 400086",19.0925675,72.9122583,Hospital
+62,"Bhagyoday Hospital
+","Bhagyoday Hospital, Near, A2, Ground Floor, Harekrishna Apartment, Telephone Exchange Rd, Ghatkopar West, Mumbai, Maharashtra 400086",19.0880087,72.9048585,Hospital
+63,"Noble Plus Hospital","Noble Plus Hospital, 501 Swastik Esplanade Behind Alpana Apartment, Lal Bahadur Shastri Marg, opp. ZYNOVA SHALBY HOSPITAL, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0878806,72.9066933,Hospital
+64,"Supreme Multi Speciality Hospital LLP
+","Supreme Multi Speciality Hospital LLP, Neelyog veydaanta Bldg, A Wing Ground & First Floor, Andheri - Ghatkopar Rd, Nityanand Nagar, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0907818,72.913752,Hospital
+65,"Aditya Hospital","Aditya Hospital, 1st, Presidential Plaza, Lal Bahadur Shastri Marg, opp. R City Mall, Godrej & Boyce Industry Estate, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0986048,72.9175543,Hospital
+66,"Dr Praful Lokhande’s Shantiniketan Hospital","Dr Praful Lokhande’s Shantiniketan Hospital, Shantiniketan, E-1, Society, Lal Bahadur Shastri Marg, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0952355,72.9138524,Hospital
+67,"Chandrajyoti Hospital
+","Chandrajyoti Hospital, Old Vikram Apartments, L. B. S Marg, Mukand Society Rd, New Shyam Nagar, Maneklal Estate, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0885214,72.9023991,Hospital
+68,"Pancholi Hospital","Pancholi Hospital, 90 Feet Rd, Sudarshan Society, Garodia Nagar, Ghatkopar East, Mumbai, Maharashtra 400071
+",19.0741508,72.9058027,Hospital
+69,"Satyam Hospital","Satyam Hospital, 2nd Floor, C Wing, Bhaveshwar Plaza, Lal Bahadur Shastri Marg, opp. Shreyas Cinema Road, Nityanand Nagar, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0927138,72.9123441,Hospital
+70,"Samadhan Health Care Centre
+","Samadhan Health Care Centre, 3rd floor 301, Alpana Apartment, Next To Doshiwadi, L.B.S Road, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0908063,72.9076669,Hospital
+71,"Jeevdaya Hospital
+","Jeevdaya Hospital, 1st Floor, B Wing, Dharmodaya Building, Jivdaya Ln, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0978481,72.9029941,Hospital
+72,"Medico Surgical Clinic & Hospital
+","Medico Surgical Clinic & Hospital, Wing A, Lal Bahadur Shastri Marg, Bhatwadi, Kapol wadi, Doshi Wadi, Mumbai, Maharashtra 400086
+",19.0883185,72.9069383,Hospital
+73,"Care Multispeciality Hospital","Care Multispeciality Hospital, ground floor, New taj apartment, Chirag Nagar, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0872487,72.8990215,Hospital
+74,"Jeevandeep Childern Hospital
+","Jeevandeep Childern Hospital, 1st Floor, Chandrodaya Building, Corner, Lal Bahadur Shastri Marg, Ghatkopar, Jivdaya Lane, W, Mumbai, Maharashtra 400086",19.0881255,72.9052541,Hospital
+75,"Vatsal Nicu And Children's Hospital","Vatsal Nicu And Children's Hospital, Station Road, Hingwala Ln, Saibaba Nagar, Pant Nagar, Ghatkopar East, Mumbai, Maharashtra 400077
+",19.082372,72.9092392,Hospital
+76,"Navjivan Hospital. M G Road. Ghatkopar East
+","Navjivan Hospital. M G Road. Ghatkopar East, 3WJ3+QQ7, near RAMJI ASSAR SCHOOL, Rajawadi Colony, Ghatkopar East, Mumbai, Maharashtra 400075
+",19.0819036,72.9044067,Hospital
+77,"Dr. Bhaskar Patel's Hospital","Dr. Bhaskar Patel's Hospital, 3WG3+Q3W, Rd Number 7, Vidya Vihar East, Vidyavihar, Mumbai, Maharashtra 400077
+",19.076975,72.902692,Hospital
+78,"Navneet Hospital Ghatkopee","Navneet Hospital Ghatkopee,  3WV7+J9, E-48, Garden Ln, near HDFC Bank, Nityanand Nagar, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0940888,72.9134572,Hospital
+79,Swastik Health Care Centre,"Swastik Health Care Centre, 401, Swastik Esplanade Behind Alpana apartment, Lal Bahadur Shastri Marg, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0881296,72.9066748,Hospital
+80,"Navjeevan Hospital Ghatkopar (East)","Navjeevan Hospital Ghatkopar (East), asher school, M G Road, Main Road, near Ramji Ashar Lane, Ghatkopar East, Mumbai, Maharashtra 400077
+",19.0785988,72.9101456,Hospital
+81,Ramabai Thackrey Hospital,"Ramabai Thackrey Hospital, 3WH5+J6C, Ghatkopar, Sindhu Wadi, Ghatkopar East, Mumbai, Maharashtra 400077
+",19.0790502,72.9080095,Hospital
+82,"Adarsh hospital
+","Adarsh hospital, Amrut Nagar Rd, Ghatkopar, Kapol wadi, Ghatkopar West, Mumbai, Maharashtra 400060
+",19.1016295,72.912073,Hospital
+83,"Tara Neo-Surg. Hospital
+","Tara Neo-Surg. Hospital, C-5, Satyam Shopping Centre, Mahatma Gandhi Road, Ghatkopar (E), Ghatkopar East, Mumbai, Maharashtra 400077",19.0756919,72.9029647,Hospital
+84,"Seth V.C Gandhi & M.A. Vora Municipal General Hospital","Seth V.C Gandhi & M.A. Vora Municipal General Hospital, 3, 7th Rd, near Rajawadi Sub Post Office, Chittranjan Nagar, Rajawadi Colony, Ghatkopar East, Mumbai, Maharashtra 400077
+",19.0793049,72.9016939,Hospital
+85,"Ghatkopar Metro Station","Ghatkopar Metro Station, Shraddhanand Road-Hirachand Desai Road Ghatkopar (W Near Ghatkopar Railway Station, Mumbai, Maharashtra 400086
+",19.0867792,72.9080649,Metro Station
+86,"Ghatkopar Metro Station (East side)
+","Ghatkopar Metro Station Bridge, 3WP5+785, Pedestrian Opas, Saibaba Nagar, Pant Nagar, Ghatkopar East, Mumbai, Maharashtra 400077
+",19.0856302,72.9083469,Metro Station
+87,"Jagruti Nagar Metro Station
+","Jagruti Nagar, Andheri Ghatkopar Link Rd, near Maneklal Estate, Maneklal Estate, Ghatkopar (W, Mumbai, Maharashtra 400084
+",19.0924711,72.9018642,Metro Station
+88,"Jagruti metro station
+","Jagruti metro station, 3WV2+2HR jagturi metro, Andheri - Ghatkopar Rd, Maneklal Estate, Ghatkopar West, Mumbai, Maharashtra 400086
+",19.0926136,72.9013846,Metro Station
+89,Asalpha Metro Station,"Asalpha, Andheri-Ghatkopar Link Road, Ghatkopar (W), Near Maheshwari Temple, Mumbai, Maharashtra 400084",19.0920487,72.911534,Metro Station
+90,"Asalpha Metro","Asalpha Metro, 3VWV+MPX, Pereira Wadi, Asalpha, Mumbai, Maharashtra 400084
+",19.0967428,72.8943664,Metro Station
+91,Ghatkopar Railway Station,"Ghatkopar, 3WP5+7H, Jawahar Rd, Ghatkopar, Saibaba Nagar, Pant Nagar, Ghatkopar East, Mumbai, Maharashtra 400077",19.0857262,72.9089968,Railway Station
+92,"Vidyavihar Railway Station
+","Vidyavihar, 3VHW+JW,  Vidyavihar station skywalk, ONGC Colony, Rajawadi Colony, Vidyavihar, Mumbai, Maharashtra 400086
+",19.079425,72.8970105,Railway Station
+93,Kurla Railway Station,"Kurla EMU Carshed, 3VFR+VF, Kurla, Mumbai, Maharashtra 400070
+",19.07464,72.89122,Railway Station
+94,Chembur Railway Station,"Chembur, 3W62+WM, Prakash Thorat Marg, Chembur West, Chembur Gaothan, Chembur, Mumbai, Maharashtra 400071",19.0623648,72.901708,Railway Station
