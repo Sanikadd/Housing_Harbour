@@ -13,9 +13,46 @@ nei = []
 # # Initialize the SQLAlchemy instance with the Flask app
 # db.init_app(app)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html')
+    with open('./data.json') as f:
+        buildings = json.load(f)
+
+    # Assuming each building object in the JSON file has a unique 'id' attribute
+    for building in buildings:
+        building['id'] = building['prop_id'] 
+    # Filter by location
+    location_filter = request.args.get('location')
+    if location_filter:
+        buildings = [building for building in buildings if location_filter.lower() in building['prop_addr'].lower()]
+    
+    # Filter by BHK
+    bhk_filter = request.args.get('bhk')
+    if bhk_filter:
+        buildings = [building for building in buildings if building['bhk'] == int(bhk_filter)]
+    
+    # Filter by price range
+    price_range_filter = request.args.get('price_range')
+    if price_range_filter:
+        min_price, max_price = map(int, price_range_filter.split('-'))
+        buildings = [building for building in buildings if min_price <= building['price'] <= max_price]
+    
+    return render_template('index.html', buildings=buildings)
+
+@app.route('/property_details/<int:prop_id>')
+def pproperty_details(prop_id):
+    with open('./data.json') as f:
+        properties = json.load(f)
+    
+    # Assuming 'prop_id' is a unique identifier for each property
+    property = next((prop for prop in properties if prop['prop_id'] == prop_id), None)
+    
+    if property:
+        return render_template('filter.html', property=property)
+    else:
+        # Handle the case where the property with the given ID is not found
+        return "Property not found", 404
+
 
 @app.route('/property/', methods=['GET', 'POST'])
 def property_view():

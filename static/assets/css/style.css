@@ -393,7 +393,9 @@
     padding: 25px;
   }
   
-  .hero-form .input-wrapper { position: relative; }
+  .hero-form .input-wrapper { 
+    position: relative;
+   }
   
   .hero-form :is(.input-label, .input-field) { color: var(--oxford-blue); }
   

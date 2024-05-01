@@ -12,7 +12,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <style>
+      .input-wrapper{
+        padding:25px;
+        display:flex;
+        flex-direction: row;
+      }
+      .hero-form .input-field { padding-inline: 45px 15px; display:flex;}
+
+.hero-form .input-field::placeholder { color: var(--manatee); }
+
+.hero-form .dropdown-list { padding-inline: 15px; }
+
+.hero-form .btn { max-width: 100%; }
+    </style>
+  </head>
 <body id="top">
     <!-- HEADER -->
     <header class="header" data-header>
@@ -192,551 +206,106 @@
                 
                 <button class="tab-btn" data-tab-btn>Rent</button>
               </div>
-              <form method="POST" class="hero-form" name="checkForm">
+            <form action="/" method="GET">
+              <div class="input-wrapper">
+                  <label for="location" class="input-label">Location: </label>
+                  <select name="location" id="location" class="dropdown-list">
+                      <option value="" selected>--</option>
+                      <option value="Pant Nagar">Pant Nagar</option>
+                  </select>
+              </div>
+              
+              <div class="input-wrapper">
+                  <label for="bhk" class="input-label">Select BHK:</label>
+                  <select name="bhk" id="bhk" class="dropdown-list">
+                      <option value="" selected>--</option>
+                      <option value="1">1 BHK</option>
+                      <option value="2">2 BHK</option>
+                      <option value="3">3 BHK</option>
+                      <option value="4">4 BHK</option>
+                  </select>
+              </div>
+              
+              <div class="input-wrapper">
+                  <label for="price_range" class="input-label">Select Price Range:</label>
+                  <select name="price_range" id="price_range" class="dropdown-list">
+                      <option value="" selected>--</option>
+                      <option value="9000000-10000000">₹90,00,000 - ₹1,00,00,000</option>
+                      <option value="10000000-20000000">₹1,00,00,000 - ₹2,00,00,000</option>
+                      <option value="20000000-30000000">₹2,00,00,000 - ₹3,00,00,000</option>
+                      <option value="30000000-40000000">₹3,00,00,000 - ₹4,00,00,000</option>
+                      <option value="40000000-50000000">₹4,00,00,000 - ₹5,00,00,000</option>
+                      <option value="50000000-100000000">₹5,00,00,000 and above</option>        
+                    </select>
+                </div>
                 <div class="input-wrapper">
-                  <div class="filter">
-              
-                      <div class="form-group">
-                        <label for="category" class="input-label">Choose Priority 1</label>
-                  
-                        <!-- Add checkbox-group class to the parent container -->
-                        <div class="checkbox-group"> 
-                          <label for="category" class="input-label"><input type="checkbox" name="criteria1" value="1">Near School</label>
-                          <label for="category" class="input-label"><input type="checkbox" name="criteria1" value="2">Near Hospital</label>
-                          <label for="category" class="input-label"><input type="checkbox" name="criteria1" value="3">Near Railway Station</label>
-                          <label for="category" class="input-label"><input type="checkbox" name="criteria1" value="4">Near Metro Station</label>
-                        </div>
-                        <br>
-                        <label for="category" class="input-label">Choose Priority 2</label>
-              
-                        <div class="checkbox-group"> 
-                          <label for="category" class="input-label"><input type="checkbox" name="criteria2" value="1">Near School</label>
-                          <label for="category" class="input-label"><input type="checkbox" name="criteria2" value="2">Near Hospital</label>
-                          <label for="category" class="input-label"><input type="checkbox" name="criteria2" value="3">Near Railway Station</label>
-                          <label for="category" class="input-label"><input type="checkbox" name="criteria2" value="4">Near Metro Station</label>
-                        </div>
-                      </div>
-                      <button class="apply-btn" onclick="applyFilter()" ><a href="http://127.0.0.1:8000/property/">Apply Filter</a></button>
-                    </div>
-                  </div>
-                </form>
-        
-        
-        
+                  <button type="submit" class="apply-btn btn btn-primary">Apply Filter</button>
+              </div>
+          </form>
+
+            
+
           
         </section>
     
-    
-    
-              <ul class="property-list">
-    
-                <li>
-                  <div class="property-card">
-    
-                    <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                      <img src="{{ url_for('static', filename='assets/images/property-1.jpg') }}" width="800" height="533" loading="lazy" alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
-
-                    </figure>
-    
-                    <!-- <button class="card-action-btn" aria-label="add to favourite">
-                      <ion-icon name="heart" aria-hidden="true"></ion-icon>
-                    </button> -->
-    
-                    <div class="card-content">
-    
-                      <h3 class="h3">
-                        <a href="#" class="card-title">SKYLINE VIHA
-                           Ghatkopar East, Mumbai</a>
-                      </h3>
-    
-                      <ul class="card-list">
-    
-                        <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="cube-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">785 sq.ft.</span>
-                        </li>
-    
-                        <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="bed-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">1,2,3,4 Beds</span>
-                        </li>
-                        <!-- <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="man-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">2/3/4 Baths</span>
-                        </li> -->
-    
-                       
-    
-                      </ul>
-    
-                      <div class="card-meta">
-    
-                        <div>
-                          <span class="meta-title">Price</span>
-    
-                          <span class="meta-text">₹ 94.0 Lac - ₹ 2.75 Cr
-                            </span>
+        <main class="main" id="main">
+          <section class="section property" aria-label="property">
+              <div class="container">
+        
+                  <h2 class="h2 section-title"><span class="span">Properties</span></h2>
+        
+                  <ul class="property-list">
+                    <!-- Iterate over properties and generate property cards -->
+                    {% for building in buildings %}
+                    <li>
+                        <div class="property-card">
+                            <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                <!-- Assuming the building model has an image field, update src attribute accordingly -->
+                                <img src="{{ url_for('static', filename='assets/images/property-1.jpg') }}" width="100%" height="50%" loading="lazy">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h3">
+                                    <!-- Assuming 'prop_name' is the name field in the Building model -->
+                                    <a href="#" class="card-title">{{ building.prop_name }}</a>
+                                </h3>
+                                <ul class="card-list">
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="cube-outline"></ion-icon>
+                                        </div>
+                                        <!-- Assuming 'sqft' represents the area in square feet -->
+                                        <span class="item-text">{{ building.sqft }} sqft</span>
+                                    </li>
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="bed-outline"></ion-icon>
+                                        </div>
+                                        <!-- Assuming 'bhk' represents the number of bedrooms -->
+                                        <span class="item-text">{{ building.bhk }} BHK</span>
+                                    </li>
+                                </ul>
+                                <div class="card-meta">
+                                    <div>
+                                        <span class="meta-title">Price</span>
+                                        <!-- Assuming 'price' represents the price of the property -->
+                                        <span class="meta-text">{{ building.price }}</span>
+                                    </div>
+                                </div>
+                                <br>
+                                <!-- Update the link to view property details -->
+                                <span class="meta-text">
+                                <!-- Update the link to view property details -->
+                                <a href="{{ url_for('pproperty_details', prop_id=building.id) }}" class="btn btn-primary">View Property</a>
+                              </span>
+                            </div>
                         </div>
-              
-                        <div>
-                          
-                        </div>
-                        
-    
-                      </div>
-                      <br>
-                      <span class="meta-text">
-    
-                        <a href="http://127.0.0.1:8000/property/" class="btn btn-primary">View Properties</a>
-    
-                      </span>
-                      
-                        
-                    </div>
-                    
-                    
-                      
-                  </div>
-                  
-                </li>
-    
-                <li>
-                  <div class="property-card">
-    
-                    <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                      <img src="{{ url_for('static', filename='assets/images/property-2.jpg') }}" width="800" height="533" loading="lazy" alt="59345 STONEWALL DR, Plaquemine, LA 70764, USA" class="img-cover">
-
-                    </figure>
-    
-                    <!-- <button class="card-action-btn" aria-label="add to favourite">
-                      <ion-icon name="heart" aria-hidden="true"></ion-icon>
-                    </button> -->
-    
-                    <div class="card-content">
-    
-                      <h3 class="h3">
-                        <a href="#" class="card-title">Tanishq Heights
-                           Ghatkopar East, Mumbai</a>
-                      </h3>
-    
-                      <ul class="card-list">
-    
-                        <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="cube-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">450sqf</span>
-                        </li>
-    
-                        <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="bed-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">1 Bed</span>
-                        </li>
-    
-                        <!-- <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="man-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">2 Baths</span>
-                        </li> -->
-    
-                      </ul>
-    
-                      <div class="card-meta">
-    
-                        <div>
-                          <span class="meta-title">Price</span>
-    
-                          <span class="meta-text">₹ 95.0 Lac Onwards</span>
-                        </div>
-    
-                        
-    
-                      </div><br>
-                      <span class="meta-text">
-    
-                        <a href="http://127.0.0.1:8000/property/" class="btn btn-primary">View Properties
-                        </a>
-    
-                      </span>
-    
-                    </div>
-                    
-    
-                  </div>
-                </li>
-    
-                <li>
-                  <div class="property-card">
-    
-                    <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                      <img src="{{ url_for('static', filename='assets/images/property-3.jpg') }}" width="800" height="533" loading="lazy" alt="3723 SANDBAR DR, Addis, LA 70710, USA" class="img-cover">
-
-                    </figure>
-    
-                    <!-- <button class="card-action-btn" aria-label="add to favourite">
-                      <ion-icon name="heart" aria-hidden="true"></ion-icon>
-                    </button> -->
-    
-                    <div class="card-content">
-    
-                      <h3 class="h3">
-                        <a href="#" class="card-title">Vikas Ornate
-                           Ghatkopar East, Mumbai
-                          </a>
-                      </h3>
-    
-                      <ul class="card-list">
-    
-                        <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="cube-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">500spf - 800sqf</span>
-                        </li>
-    
-                        <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="bed-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">1/2 Beds</span>
-                        </li>
-    
-                        <!-- <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="man-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">2/3 Baths</span>
-                        </li> -->
-    
-                      </ul>
-    
-                      <div class="card-meta">
-    
-                        <div>
-                          <span class="meta-title">Price</span>
-    
-                          <span class="meta-text">₹ 96.0 Lac - ₹ 1.48 Cr</span>
-                        </div>
-    
-                        
-    
-                      </div><br>
-                      <span class="meta-text">
-    
-                        <a href="http://127.0.0.1:8000/property/" class="btn btn-primary">View Properties</a>
-    
-                      </span>
-    
-                    </div>
-    
-                  </div>
-                </li>
-    
-                <li>
-                  <div class="property-card">
-    
-                    <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                      <img src="{{ url_for('static', filename='assets/images/property-4.jpg') }}" width="800" height="533" loading="lazy" alt="LOT 21 ROYAL OAK DR, Prairieville, LA 70769, USA" class="img-cover">
-
-                    </figure>
-    
-                    <!-- <button class="card-action-btn" aria-label="add to favourite">
-                      <ion-icon name="heart" aria-hidden="true"></ion-icon>
-                    </button> -->
-    
-                    <div class="card-content">
-    
-                      <h3 class="h3">
-                        <a href="#" class="card-title">Rajshree Royale Apt
-                           Ghatkopar West, Mumbai
-                          </a>
-                      </h3>
-    
-                      <ul class="card-list">
-    
-                        <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="cube-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">800sqf</span>
-                        </li>
-    
-                        <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="bed-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">2 Beds</span>
-                        </li>
-    
-                        <!-- <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="man-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">3 Baths</span>
-                        </li> -->
-    
-                      </ul>
-    
-                      <div class="card-meta">
-    
-                        <div>
-                          <span class="meta-title">Price</span>
-    
-                          <span class="meta-text">₹ 1.24 Cr - ₹ 3.70 Cr</span>
-                        </div>
-    
-                        
-    
-                      </div><br>
-                      <span class="meta-text">
-    
-                        <a href="http://127.0.0.1:8000/property/" class="btn btn-primary">View Properties</a>
-    
-                      </span>
-    
-                    </div>
-                    
-    
-                  </div>
-                </li>
-    
-                <li>
-                  <div class="property-card">
-    
-                    <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                      <img src="{{ url_for('static', filename='assets/images/property-5.jpg') }}" width="800" height="533" loading="lazy" alt="710 BOYD DR, Unit #1102, Baton Rouge, LA 70808, USA" class="img-cover">
-
-                    </figure>
-    
-                    <!-- <button class="card-action-btn" aria-label="add to favourite">
-                      <ion-icon name="heart" aria-hidden="true"></ion-icon>
-                    </button> -->
-    
-                    <div class="card-content">
-    
-                      <h3 class="h3">
-                        <a href="#" class="card-title">Sai Siddhi Towers
-                           Ghatkopar East, Mumbai
-                          </a>
-                      </h3>
-    
-                      <ul class="card-list">
-    
-                        <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="cube-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">827sqf</span>
-                        </li>
-    
-                        <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="bed-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">2 Beds</span>
-                        </li>
-    
-                        <!-- <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="man-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">3 Baths</span>
-                        </li> -->
-    
-                      </ul>
-    
-                      <div class="card-meta">
-    
-                        <div>
-                          <span class="meta-title">Price</span>
-    
-                          <span class="meta-text">₹ 1.16 Cr - ₹ 1.70 Cr</span>
-                        </div>
-    
-                        
-    
-                      </div><br>
-                      <span class="meta-text">
-    
-                        <a href="http://127.0.0.1:8000/property/" class="btn btn-primary">View Properties</a>
-    
-                      </span>
-    
-                    </div>
-    
-                  </div>
-                </li>
-    
-                <li>
-                  <div class="property-card">
-    
-                    <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                      <img src="{{ url_for('static', filename='assets/images/property-6.jpg') }}" width="800" height="533" loading="lazy" alt="5133 MCLAIN WAY, Baton Rouge, LA 70809, USA" class="img-cover">
-
-                    </figure>
-    
-                    <!-- <button class="card-action-btn" aria-label="add to favourite">
-                      <ion-icon name="heart" aria-hidden="true"></ion-icon>
-                    </button> -->
-    
-                    <div class="card-content">
-    
-                      <h3 class="h3">
-                        <a href="#" class="card-title">Kanan Apartment
-                           Ghatkopar East, Mumbai</a>
-                      </h3>
-    
-                      <ul class="card-list">
-    
-                        <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="cube-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">500spf - 800sqf</span>
-                        </li>
-    
-                        <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="bed-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">1/2 Beds</span>
-                        </li>
-    
-                        <!-- <li class="card-item">
-                          <div class="item-icon">
-                            <ion-icon name="man-outline"></ion-icon>
-                          </div>
-    
-                          <span class="item-text">2/3 Baths</span>
-                        </li> -->
-    
-                      </ul>
-    
-                      <div class="card-meta">
-    
-                        <div>
-                          <span class="meta-title">Price</span>
-    
-                          <span class="meta-text">₹ 89.0 Lac - ₹ 1.28 Cr</span>
-                        </div>
-    
-                        
-    
-                      </div><br>
-                      <span class="meta-text">
-    
-                        <a href="http://127.0.0.1:8000/property/" class="btn btn-primary">View Properties</a>
-    
-                      </span>
-    
-                    </div>
-    
-                  </div>
-                </li>
+                    </li>
+                    {% endfor %}
+                </ul>
                 
-                <!-- <div class="property-card">
-    
-                  <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-7.jpg" width="800" height="533" loading="lazy"
-                      alt="710 BOYD DR, Unit #1102, Baton Rouge, LA 70808, USA" class="img-cover">
-                  </figure>
-    
-                  <button class="card-action-btn" aria-label="add to favourite">
-                    <ion-icon name="heart" aria-hidden="true"></ion-icon>
-                  </button>
-    
-                  <div class="card-content">
-    
-                    <h3 class="h3">
-                      <a href="#" class="card-title">Adityaraj Star
-                        By Adityaraj Group
-                         Ghatkopar East, Mumbai
-                        
-                        </a>
-                    </h3>
-    
-                    <ul class="card-list">
-    
-                      <li class="card-item">
-                        <div class="item-icon">
-                          <ion-icon name="cube-outline"></ion-icon>
-                        </div>
-    
-                        <span class="item-text">820sqf</span>
-                      </li>
-    
-                      <li class="card-item">
-                        <div class="item-icon">
-                          <ion-icon name="bed-outline"></ion-icon>
-                        </div>
-    
-                        <span class="item-text">2 Beds</span>
-                      </li>
-    
-                      <li class="card-item">
-                        <div class="item-icon">
-                          <ion-icon name="man-outline"></ion-icon>
-                        </div>
-    
-                        <span class="item-text">3 Baths</span>
-                      </li>
-    
-                    </ul>
-    
-                    <div class="card-meta">
-    
-                      <div>
-                        <span class="meta-title">Price</span>
-    
-                        <span class="meta-text">₹ 90.0 Lac - ₹ 1.67 Cr</span>
-                      </div>
-    
-                      
-    
-                    </div><br>
-                    <span class="meta-text">
-    
-                      <a href="http://127.0.0.1:8000/property/" class="btn btn-primary">View Property</a>
-    
-                    </span>
-    
-                  </div>
-    
-                </div> -->
-              </li>
-    
-              <li>
-    
-              </ul>
-    
-            </div>
+                </div>
           </section>
+
     
     
     
