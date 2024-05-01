@@ -25,13 +25,15 @@
 .hero-form .dropdown-list { padding-inline: 15px; }
 
 .hero-form .btn { max-width: 100%; }
+
+.res{ color: hsl(142, 72%, 29%);}
     </style>
   </head>
 <body id="top">
     <!-- HEADER -->
     <header class="header" data-header>
         <div class="container">
-            <a href="#" class="logo">
+            <a href="{{ url_for('index') }}" class="logo">
                 <ion-icon name="business-outline"></ion-icon> HOUSING HARBOR
             </a>
             <nav class="navbar container" data-navbar>
@@ -40,7 +42,7 @@
                       <a href="{{ url_for('index') }}" class="navbar-link" data-nav-link>Home</a>
                     </li>
                     <li>
-                      <a href="{{ url_for('property_view') }}" class="navbar-link" data-nav-link>Property Listing</a>
+                      <a href="{{ url_for('property_view') }}" class="navbar-link" data-nav-link>Nearby Finds</a>
                     </li>
                     <li>
                       <a href="{{ url_for('fw') }}" class="navbar-link" data-nav-link>Financial Wellness</a>
@@ -303,7 +305,9 @@
                     {% endfor %}
                 </ul>
                 
-                </div>
+                </div><br><br>
+                <p class="res section-title">- NO RESULTS! -</p>
+
           </section>
 
     

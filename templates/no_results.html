@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <title>Property Details</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top:50px;
+        }
+        h1{
+            font-size: 70px;
+            color: hsl(142, 72%, 29%);
+        }
+        p{
+            font-size: 30px;
+            color: hsl(142, 72%, 29%);
+        }
+        a{
+           color: hsl(142, 72%, 29%);
+           background-color: hsl(215, 20%, 65%);
+        }
+    </style>
+</head>
+<body>
+    <div class="res">
+        <h1> NO RESULTS !! <h1>
+            <p>Try Again !</p><br>
+            <a href="{{ url_for('index') }}">Home</a>
+    </div>
+</body>
+</html>
