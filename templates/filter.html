@@ -282,7 +282,12 @@
                         <p>Club House: {% if property.club_house %} Yes {% else %} No {% endif %}</p>
                     </div>
                 </td>
-                
+                <td>
+                    <div class="icon-container">
+                        <img class="icon" src="{{ url_for('static', filename='assets/images/phone.jpg') }}" alt="Icon 2">
+                        <p>Owner's Phone number: {{ property.phone}}</p>
+                    </div>
+                </td>
             </tr>
         </tbody>
     </table>
