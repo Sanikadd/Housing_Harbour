@@ -135,7 +135,7 @@
         <option value="Rent">Rent</option>
         <!-- <option value="Buy">Buy</option> -->
     </select><br>
-
+<!--
     <label for="priceRange">Price Range:</label>
     <select id="priceRange" name="priceRange" required>
         <option value="">Select</option>
@@ -145,7 +145,7 @@
         <option value="₹30,000 - ₹40,000">₹30,000 - ₹40,000</option>
         <option value="₹40,000 - ₹50,000">₹40,000 - ₹50,000</option>
         <option value="Above ₹50,000">Above ₹50,000</option>
-    </select>
+    </select>-->
     <br>
 
     <br>
@@ -153,54 +153,30 @@
     <input type="submit" value="Calculate">
 </form>
 
-<script>
-    function calculateAffordablePropertyPrice() {
-        var income = parseInt(document.getElementById("income").value);
-        var expenses = parseInt(document.getElementById("expenses").value);
-        var budget = parseInt(document.getElementById("budget").value);
-        var debtToIncomeRatio = 0.3; // Adjust this according to financial rules
-        
-        var maxAffordablePrice = (income - expenses) * debtToIncomeRatio;
-        var propertyType = document.getElementById("propertyType").value;
-        
-        if (propertyType === "Rent") {
-            alert("Based on your income and expenses, you can afford a rental property up to approximately ₹" + maxAffordablePrice.toFixed(2));
-        } else if (propertyType === "Buy") {
-            if (budget > maxAffordablePrice) {
-                alert("Based on your income and expenses, you can afford a property up to your budget of ₹" + budget);
-            } else {
+
+    <script>
+        function calculateAffordablePropertyPrice() {
+            // Retrieve input values from the form
+            var income = parseFloat(document.getElementById("income").value);
+            var expenses = parseFloat(document.getElementById("expenses").value);
+            var budget = parseFloat(document.getElementById("budget").value);
+    
+            // Calculate the maximum affordable price
+            var maxAffordablePrice = (income - expenses);
+    
+            // Check if the budget is sufficient to afford a property within the maximum affordable price
+            //if (budget>= maxAffordablePrice) {
+                // If the budget is sufficient, inform the user that they can afford a property within their budget
+                //alert("Based on your income and expenses, you can afford a property up to your budget of ₹" + budget);
+            //} else {
+                // If the budget is insufficient, suggest the maximum affordable price
                 alert("Based on your income and expenses, you can afford a property up to approximately ₹" + maxAffordablePrice.toFixed(2));
             }
-        }
-        
-        return false; // Prevent form submission
-    }
-    
-    function updatePriceOptions() {
-        var propertyType = document.getElementById("propertyType").value;
-        var income = parseInt(document.getElementById("income").value);
-        var priceRangeSelect = document.getElementById("priceRange");
-        
-        // Enable all options first
-        for (var i = 0; i < priceRangeSelect.options.length; i++) {
-            priceRangeSelect.options[i].disabled = false;
-        }
-        
-        // Disable options based on property type and income
-        if (propertyType === "Buy" && income < 50000) {
-            priceRangeSelect.querySelector("option[value='Above ₹50,000']").disabled = true;
-        }
-        
-        if (propertyType === "Rent" && income < 10000) {
-            priceRangeSelect.querySelector("option[value='Below ₹10,000']").disabled = true;
-        }
-    }
-    
-    // Call the function initially and whenever property type or income changes
-    document.getElementById("propertyType").addEventListener("change", updatePriceOptions);
-    document.getElementById("income").addEventListener("change", updatePriceOptions);
-
-</script>
+    //
+            // Prevent form submission
+           // return false;
+        //}
+    </script>
 
 </body>
 </html>
